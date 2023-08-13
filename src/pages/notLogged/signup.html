@@ -2,24 +2,26 @@
 <div class="signup-page">
     {{#card}}
     {{> shorts/title class="card__title" title="Регистрация" }}
-    {{> input/input type="email" name="email" placeholder="Email" }}
-    {{> input/input type="text" name="login" placeholder="Логин" }}
-    {{> input/input type="text" name="first_name" placeholder="Имя" }}
-    {{> input/input type="text" name="second_name" placeholder="Фамилия" }}
-    {{> input/input type="text" name="phone" placeholder="Телефон" }}
-    {{> input/input type="password" name="password" placeholder="Пароль" }}
-    {{> input/input type="password" name="repeatPassword" placeholder="Повторите пароль" }}
-    
-    {{#if (isPasswordSame 'password' 'pasSword')}}
-    {{> shorts/message class="card__message_error card__message_hidden" text="Пароли не совпадают"}}
-    {{else}}
-    {{> shorts/message class="card__message_error" text="Пароли не совпадают" }}
-    {{/if}}
 
-    {{> spacer/spacer }}
+    <form name="signup-form">
+        {{> input/input type="email" name="email" placeholder="Email" }}
+        {{> input/input type="text" name="login" placeholder="Логин" }}
+        {{> input/input type="text" name="first_name" placeholder="Имя" }}
+        {{> input/input type="text" name="second_name" placeholder="Фамилия" }}
+        {{> input/input type="text" name="phone" placeholder="Телефон" }}
+        {{> input/input type="password" name="password" placeholder="Пароль" }}
+        {{> input/input type="password" name="repeatPassword" placeholder="Повторите пароль" }}
 
-    {{> button/button text="Зарегистрироваться" url="#" }}
-    {{> shorts/link class="card__link" text="Уже зарегистрированы?" url="/"}}
-    {{/card}}
+        {{> spacer/spacer }}
+        {{#if (isPasswordSame 'password' 'pasSword')}}
+        {{> shorts/message class="card__message_error card__message_hidden" text="Пароли не совпадают"}}
+        {{else}}
+        {{> shorts/message class="card__message_error" text="Пароли не совпадают" }}
+        {{/if}}
+
+
+        {{> button/button text="Зарегистрироваться" url="#" }}
+        {{> shorts/link class="card__link" text="Уже зарегистрированы?" url="/"}}
+        {{/card}}
 </div>
 {{/ layouts/page}}
