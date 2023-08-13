@@ -9,6 +9,8 @@
 
 Для быстрого запуска проекта на порту 3000 используйте команду `npm run start`. После этого откройте проект по ссылке [http://localhost:3000/](http://localhost:3000/).
 
+Развёрнутое приложение доступно на Netlify: [https://deploy--fancy-meringue-900cb3.netlify.app/](https://deploy--fancy-meringue-900cb3.netlify.app/).
+
 ### Список страниц проекта
 
 [Страница-оглавление](http://localhost:3000/index.html)
