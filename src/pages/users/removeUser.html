@@ -1,0 +1,15 @@
+{{#> layouts/page title="Добавить пользователя" }}
+<div class="add-user-page">
+    {{#card}}
+    {{> shorts/title class="card__title" title="Удалить пользователя" }}
+
+    {{> spacer/spacer }}
+    <form name="removeUser">
+        {{> input/input type="text" name="user" placeholder="@vasya" }}
+    </form>
+    {{> spacer/spacer }}
+
+    {{> button/button text="Удалить" }}
+    {{/card}}
+</div>
+{{/ layouts/page }}

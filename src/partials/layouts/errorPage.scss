@@ -1,0 +1,28 @@
+.error__wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: fit-content;
+
+    padding: 10px 30px 20px;
+    @include modalPosition;
+}
+
+.error__type {
+    font-family: $fontFamily;
+    font-size: 50px;
+}
+
+.error__message {
+    font-family: $fontFamily;
+    font-size: x-large;
+}
+
+.error__link {
+    text-align: center;
+    font-size: small;
+    color: $link;
+    font-family: $fontFamily;
+    text-decoration: none;
+}

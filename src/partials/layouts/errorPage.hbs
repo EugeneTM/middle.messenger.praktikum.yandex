@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles.scss" />
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    <div class="error__wrapper">
+        <h1 class="error__type">
+            {{ errorType }}
+        </h1>
+
+        <h3 class="error__message">
+            {{ errorMessage }}
+        </h3>
+
+        <div class="error__link">
+            {{> shorts/link text="Назад к чатам" url="/" }}
+        </div>
+    </div>
+</body>
+
+</html>
