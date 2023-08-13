@@ -5,4 +5,4 @@ export default function messenger(context) {
             ${context.fn(this)}
         </div>
     `
-}
+} 
