@@ -5,13 +5,13 @@
 
 {{> shorts/title class="profile__title" title="Василий" }}
 <form name="form__profile_edit">
-    {{> profileField/profileField hint="Email" value="vasya@contoso.ru" url="#" type="text" }}
-    {{> profileField/profileField hint="Логин" value="vasya" url="#" type="text" }}
+    {{> profileField/profileField hint="Email" value="vasya@contoso.ru" url="#" type="text" name="email"}}
+    {{> profileField/profileField hint="Логин" value="vasya" url="#" type="text" name="login" }}
     <hr>
-    {{> profileField/profileField hint="Имя" value="Вася" url="#" type="text" }}
-    {{> profileField/profileField hint="Фамилия" value="Васильев" url="#" type="text" }}
+    {{> profileField/profileField hint="Имя" value="Вася" url="#" type="text" name="first_name" }}
+    {{> profileField/profileField hint="Фамилия" value="Васильев" url="#" type="text" name="second_name" }}
     <hr>
-    {{> profileField/profileField hint="Телефон" value="+8 800 911 1235" url="#" type="text" }}
+    {{> profileField/profileField hint="Телефон" value="+8 800 911 1235" url="#" type="text" name="phone" }}
     <hr>
 
     {{> spacer/spacer }}
