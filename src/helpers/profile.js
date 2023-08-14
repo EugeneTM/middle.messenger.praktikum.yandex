@@ -1,8 +1,8 @@
 export default function profile(context) {
     // language=hbs
     return `
-        <div class="profile">
+        <main class="profile profile__main">
             ${context.fn(this)}
-        </div>
+        </main>
     `
 } 

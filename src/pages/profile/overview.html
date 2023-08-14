@@ -1,29 +1,28 @@
 {{#> layouts/profilePage title="Профиль" }}
-<div class="profile-page">
-  {{#profile}}
 
-  {{> avatar/avatar picture="/avatar.png" class="profile__avatar"}}
+{{#profile}}
+{{> avatar/avatar picture="/avatar.png" class="profile__avatar"}}
 
-  {{> shorts/title class="profile__title" title="Василий" }}
+{{> shorts/title class="profile__title" title="Василий" }}
 
-  <form name="overview-profile-form">
-    {{> profileField/profileField hint="Email" value="vasya@contoso.ru" url="#" disabled=true type="text" name="email" }}
-    {{> profileField/profileField hint="Логин" value="vasya" url="#" disabled=true type="text" name="login" }}
-    <hr>
-    {{> profileField/profileField hint="Имя" value="Вася" url="#" disabled=true type="text" name="first_name" }}
-    {{> profileField/profileField hint="Фамилия" value="Васильев" url="#" disabled=true type="text" name="second_name" }}
-    {{> profileField/profileField hint="Телефон" value="+8 800 911 1235" url="#" disabled=true type="text" name="phone" }}
-    <hr>
-    {{> profileField/profileField hint="Имя в чате" value="Вася" url="#" disabled=true type="text" name="display_name" }}
-  </form>
+<form name="form__profile_overview">
+  {{> profileField/profileField hint="Email" value="vasya@contoso.ru" url="#" disabled=true type="text" name="email" }}
+  {{> profileField/profileField hint="Логин" value="vasya" url="#" disabled=true type="text" name="login" }}
   <hr>
-
-  {{> spacer/spacer }}
-
-  {{> shorts/link class="profile__link" text="Изменить данные" url="#"}}
-  {{> shorts/link class="profile__link" text="Изменить пароль" url="#"}}
+  {{> profileField/profileField hint="Имя" value="Вася" url="#" disabled=true type="text" name="first_name" }}
+  {{> profileField/profileField hint="Фамилия" value="Васильев" url="#" disabled=true type="text" name="second_name" }}
+  {{> profileField/profileField hint="Телефон" value="+8 800 911 1235" url="#" disabled=true type="text" name="phone" }}
   <hr>
-  {{> shorts/link class="profile__link_leave" text="Выйти" url="/"}}
-  {{/profile}}
-</div>
-{{/ layouts/profilePage}} 
+  {{> profileField/profileField hint="Имя в чате" value="Вася" url="#" disabled=true type="text" name="display_name" }}
+</form>
+<hr>
+
+{{> spacer/spacer }}
+
+{{> shorts/link class="profile__link" text="Изменить данные" url="#"}}
+{{> shorts/link class="profile__link" text="Изменить пароль" url="#"}}
+<hr>
+{{> shorts/link class="profile__link_leave" text="Выйти" url="/"}}
+{{/profile}}
+
+{{/ layouts/profilePage}}

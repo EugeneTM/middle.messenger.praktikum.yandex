@@ -1,15 +1,15 @@
 {{#> layouts/page title="Добавить пользователя" }}
-<div class="add-user-page">
-    {{#card}}
+{{#card}}
+<div class="modal__add_user">
     {{> shorts/title class="card__title" title="Добавить пользователя" }}
 
     {{> spacer/spacer }}
-    <form name="add-user-form">
+    <form name="form__user_add">
         {{> input/input type="text" name="user" placeholder="@vasya" value="@"}}
     </form>
     {{> spacer/spacer }}
 
     {{> button/button text="Добавить" }}
-    {{/card}}
 </div>
-{{/ layouts/page }} 
+{{/card}}
+{{/ layouts/page }}

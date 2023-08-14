@@ -1,8 +1,8 @@
 export default function messenger(context) {
     // language=hbs
     return `
-        <div class="messenger">
+        <main class="messenger messenger__main">
             ${context.fn(this)}
-        </div>
+        </main>
     `
 } 

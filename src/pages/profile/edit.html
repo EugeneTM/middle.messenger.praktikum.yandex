@@ -1,23 +1,22 @@
 {{#> layouts/profilePage title="Редактирование профиля" }}
-<div class="profile-page">
-    {{#profile}}
 
-    {{> avatar/avatar picture="/avatar.png" editable="true" class="profile__avatar"}}
+{{#profile}}
+{{> avatar/avatar picture="/avatar.png" editable="true" class="profile__avatar"}}
 
-    {{> shorts/title class="profile__title" title="Василий" }}
-    <form name="edit-profile-form">
-        {{> profileField/profileField hint="Email" value="vasya@contoso.ru" url="#" type="text" }}
-        {{> profileField/profileField hint="Логин" value="vasya" url="#" type="text" }}
-        <hr>
-        {{> profileField/profileField hint="Имя" value="Вася" url="#" type="text" }}
-        {{> profileField/profileField hint="Фамилия" value="Васильев" url="#" type="text" }}
-        <hr>
-        {{> profileField/profileField hint="Телефон" value="+8 800 911 1235" url="#" type="text" }}
-        <hr>
+{{> shorts/title class="profile__title" title="Василий" }}
+<form name="form__profile_edit">
+    {{> profileField/profileField hint="Email" value="vasya@contoso.ru" url="#" type="text" }}
+    {{> profileField/profileField hint="Логин" value="vasya" url="#" type="text" }}
+    <hr>
+    {{> profileField/profileField hint="Имя" value="Вася" url="#" type="text" }}
+    {{> profileField/profileField hint="Фамилия" value="Васильев" url="#" type="text" }}
+    <hr>
+    {{> profileField/profileField hint="Телефон" value="+8 800 911 1235" url="#" type="text" }}
+    <hr>
 
-        {{> spacer/spacer }}
-        {{> button/button text="Сохранить" }}
-    </form>
-    {{/profile}}
-</div>
-{{/ layouts/profilePage}} 
+    {{> spacer/spacer }}
+    {{> button/button text="Сохранить" }}
+</form>
+{{/profile}}
+
+{{/ layouts/profilePage}}
