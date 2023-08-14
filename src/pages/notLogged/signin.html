@@ -1,0 +1,18 @@
+{{#> layouts/page title="Вход" }}
+
+{{#card}}
+  {{> shorts/title class="card__title" title="Вход" }}
+
+  <form name="form__signin">
+    {{> input/input type="email" name="email" placeholder="Email" }}
+    {{> input/input type="password" name="password" placeholder="Пароль" }}
+
+    {{> spacer/spacer }}
+    {{> shorts/message class="card__message_error" text="Неверный логин или пароль" }}
+    {{> button/button text="Войти" url="#" }}
+  </form>
+
+  {{> shorts/link class="card__link" text="Не зарегистрированы?" url="/" }}
+  {{/card}}
+
+{{/ layouts/page }} 

@@ -1,0 +1,46 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+a {
+    
+}
+
+$link: lighten(blue, 20%);
+$disabledInputColor: #a5a4a4;
+$normalMessageColor: #a5a4a4;
+$warningMessageColor: red;
+$underscoreColor: rgba(75, 75, 247, .5);
+$hrColor: #EAEAEA;
+$fontFamily: 'Inter', sans-serif;
+
+$inputFontSize: .8em;
+$secondaryFontSize: small;
+
+@mixin modalPosition {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+// Pages
+
+// Helpers
+@import './helpers/card.scss';
+@import './helpers/profile.scss';
+@import './helpers/messenger.scss';
+
+// Layouts
+@import './partials/layouts/errorPage.scss';
+@import './partials/layouts/messenger.scss';
+
+// Partials
+@import './partials/button/button.scss';
+@import './partials/input/input.scss';
+@import './partials/avatar/avatar.scss';
+@import './partials/profileField/profileField.scss';
+
+// Shorts 

@@ -1,0 +1,89 @@
+.card {
+    @include modalPosition;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: 350px;
+    padding: 10px 30px 20px;
+    overflow: auto;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    form {
+        width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        border-bottom: 1px solid $underscoreColor;
+        margin: 10px 0;
+        padding: 1px 5px;
+
+        &:focus {
+            border-bottom-color: color.change($underscoreColor, $alpha: 1);
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .spacer {
+        height: 3em;
+    }
+
+    .card__title {
+        text-align: center;
+        color: lighten(black, 30%);
+        font-family: $fontFamily;
+        font-size: large;
+        padding: 20px;
+
+        &_error {
+            color: red;
+        }
+    }
+
+    .card__message {
+        padding: 1px 5px;
+        font-family: $fontFamily;
+
+        &_hidden {
+            visibility: hidden;
+        }
+    }
+
+    .card__message_normal {
+        @extend .card__message;
+        font-size: small;
+        color: $normalMessageColor;
+    }
+
+    .card__message_warning {
+        @extend .card__message;
+        color: $warningMessageColor;
+    }
+
+    .card__message_error {
+        @extend .card__message;
+        font-size: small;
+        color: $warningMessageColor;
+    }
+
+    .card__link {
+        font-size: small;
+        color: $link;
+        font-family: $fontFamily;
+        text-decoration: none;
+    }
+} 

@@ -1,0 +1,28 @@
+.profile__field {
+    list-style: none;
+    display: flex;
+    /* turn children li elements into flex children */
+    flex: 1;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0;
+    padding: 1px 5px;
+    font-family: $fontFamily;
+    font-size: 0.8rem;
+
+    .profile__field_hint {
+        flex: 1;
+    }
+
+    .profile__field_value {
+        flex: 1;
+        input {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+            color: grey;
+        }
+    }
+} 
