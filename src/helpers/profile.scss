@@ -38,7 +38,7 @@
         width: 100%;
         height: 1px;
         background: $hrColor;
-        border: 0px;
+        border: 0;
     }
 
     .spacer {
@@ -46,10 +46,10 @@
     }
 
     .profile__title {
-        color: lighten(black, 30%);
+        color: color.adjust(black, $lightness: 30%);
         font-family: $fontFamily;
         font-size: x-large;
-        padding: 20px 0 20px;
+        padding: 20px 0;
     }
 
     .profile__link {
@@ -58,10 +58,11 @@
         font-family: $fontFamily;
         text-decoration: none;
         margin-right: auto;
-        padding: 5px 5px;
+        padding: 5px;
 
         &_leave {
             @extend .profile__link;
+
             color: red;
         }
     }
@@ -77,18 +78,20 @@
 
     .profile__message_normal {
         @extend .profile__message;
+
         font-size: small;
         color: $normalMessageColor;
     }
 
     .profile__message_warning {
         @extend .profile__message;
+
         color: $warningMessageColor;
     }
 
     .profile__message_error {
         @extend .profile__message;
-        // margin-right: auto;
+
         font-size: small;
         color: $warningMessageColor;
     }

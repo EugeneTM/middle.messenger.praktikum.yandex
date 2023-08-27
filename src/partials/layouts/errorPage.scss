@@ -2,10 +2,9 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
     width: fit-content;
-
     padding: 10px 30px 20px;
+    
     @include modalPosition;
 }
 

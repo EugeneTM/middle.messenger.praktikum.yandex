@@ -1,7 +1,6 @@
 .profile__field {
     list-style: none;
     display: flex;
-    /* turn children li elements into flex children */
     flex: 1;
     flex-wrap: wrap;
     width: 100%;
@@ -16,6 +15,7 @@
 
     .profile__field_value {
         flex: 1;
+        
         input {
             text-align: right;
         }
