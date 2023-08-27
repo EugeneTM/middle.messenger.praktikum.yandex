@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite';
+import { defineConfig, Plugin } from 'vite';
 import { resolve } from 'path';
 
 import handlebars from 'vite-plugin-handlebars';
+import checker from 'vite-plugin-checker';
 
 import card from "./src/helpers/card";
 import messenger from "./src/helpers/messenger";
@@ -20,7 +21,10 @@ export default defineConfig({
                 profile,
                 isPasswordSame,
             },
-        }),
+        }) as unknown as Plugin,
+        checker({
+            typescript: true,
+        })
     ],
 
     build: {
@@ -57,6 +61,7 @@ export default defineConfig({
         }
     },
     server: {
-        open: '/'
+        open: '/',
+        host: '0.0.0.0'
     }
 }); 
