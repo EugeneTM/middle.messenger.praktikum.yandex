@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "airbnb-base"
+    // "airbnb-typescript/base",
+  ],
+  "rules": {
+    "no-console": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      0
+    ]
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
