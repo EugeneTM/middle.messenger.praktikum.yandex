@@ -1,0 +1,34 @@
+@import '#/styles.scss';
+
+.profile__field {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin: 10px 0;
+  padding: 1px 5px;
+  font-family: $fontFamily;
+  font-size: 0.8rem;
+  
+  .profile__field_hint {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile__field_value {
+    flex: 1;
+    
+    input {
+      border-bottom-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+      color: grey;
+    }
+  }
+}

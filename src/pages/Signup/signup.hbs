@@ -1,7 +1,24 @@
-<div class="error__page">
-  {{#ErrorLayout title="500" errorType="500" errorMessage="Всё сломалось!"}}
+{{#NotSignedLayout }}
+{{#Card title="Регистрация"}}
 
+<form name="form__signin">
+  {{{Input type="email" type="email" name="email" placeholder="Email"}}}
 
-  
-  {{/ErrorLayout}}
-</div>
+  {{{Input type="text" name="login" placeholder="Логин" }}}
+  {{{Input type="text" name="first_name" placeholder="Имя" }}}
+  {{{Input type="text" name="second_name" placeholder="Фамилия" }}}
+  {{{Input type="text" name="phone" placeholder="Телефон" }}}
+  {{{Input type="password" name="password" placeholder="Пароль" }}}
+  {{{Input type="password" name="repeatPassword" placeholder="Повторите пароль" }}}
+
+  {{{Spacer}}}
+
+  {{{Message class="card__message_error" text="Пароли не совпадают"}}}
+
+  {{{Button text="Зарегистрироваться" url="#"}}}
+</form>
+
+{{{Link class="card__link" text="Уже зарегистрированы?" url="/" }}}
+{{/Card}}
+
+{{/NotSignedLayout }}

@@ -1,10 +1,10 @@
 import Block from '#utils/Block';
-import template from './button.hbs';
+import template from './avatar.hbs';
 import './styles.scss';
 
-interface ButtonProps {
-  text: string;
-  type?: 'submit' | 'button',
+interface AvatarProps {
+  picture: string;
+  editable: boolean,
   url?: string,
   onClick?: () => void;
   events: {
@@ -12,8 +12,8 @@ interface ButtonProps {
   };
 }
 
-export default class Button extends Block {
-  constructor(props: ButtonProps) {
+export default class Avatar extends Block {
+  constructor(props: AvatarProps) {
     super({
       ...props,
       events: {

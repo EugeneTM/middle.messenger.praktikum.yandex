@@ -1,0 +1,25 @@
+{{#ProfileLayout}}
+{{#Card title="Редактирование профиля"}}
+{{{Avatar picture="/avatar.png" picture="/avatar.png" class="profile__avatar" editable=true}}}
+
+<div class="profile__title">Василий</div>
+
+<form name="form__profile_overview">
+  {{{ProfileField hint="Email" value="vasya@contoso.ru" url="#" type="text" name="email" }}}
+  {{{ProfileField hint="Логин" value="vasya" url="#"  type="text" name="login" }}}
+  <hr>
+  {{{ProfileField hint="Имя" value="Вася" url="#"  type="text" name="first_name" }}}
+  {{{ProfileField hint="Фамилия" value="Васильев" url="#"  type="text" name="second_name" }}}
+  <hr>
+  {{{ProfileField hint="Телефон" value="+7 800 911 1235" url="#" type="text" name="phone" }}}
+
+  {{{ProfileField hint="Имя в чате" value="Вася" url="#"  type="text" name="display_name" }}}
+
+  {{{Spacer}}}
+
+  {{{Button text="Сохранить" url="/"}}}
+</form>
+
+{{/Card}}
+
+{{/ProfileLayout }}

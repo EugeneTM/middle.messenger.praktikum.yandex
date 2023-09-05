@@ -5,8 +5,12 @@
   border: none;
   outline: none;
   font-family: $fontFamily;
-}
 
-.input[type="password"] {
-  color: red;
+  &[type="password"] {
+    color: red;
+  }
+
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0%);
+  }
 }

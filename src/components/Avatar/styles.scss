@@ -1,0 +1,36 @@
+@import '#/styles.scss';
+
+.profile__avatar {
+  position: relative;
+  width: 128px;
+  height: 128px;
+
+  img {
+    border-radius: 50%;
+  }
+
+  .avatar__overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    border-radius: 50%;
+    background-color: rgba(125, 125, 125, 55%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity .5s;
+    }
+
+    a {
+      font-family: $fontFamily;
+      font-size: small;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
