@@ -1,22 +1,22 @@
 @use "sass:color";
-@import "'https://fonts.googleapis.com/css2?family=Inter&display=swap'";
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 // Pages
 
 // Helpers
-@import './helpers/card';
-@import './helpers/profile';
-@import './helpers/messenger';
+// @import './helpers/card';
+// @import './helpers/profile';
+// @import './helpers/messenger';
 
-// Layouts
-@import './partials/layouts/errorPage';
-@import './partials/layouts/messenger';
+// // Layouts
+// @import './partials/layouts/errorPage';
+// @import './partials/layouts/messenger';
 
-// Partials
-@import './partials/button/button';
-@import './partials/input/input';
-@import './partials/avatar/avatar';
-@import './partials/profileField/profileField';
+// // Partials
+// @import './partials/button/button';
+// @import './partials/input/input';
+// @import './partials/avatar/avatar';
+// @import './partials/profileField/profileField';
 
 // Shorts 
 
@@ -28,7 +28,7 @@ $link: color.adjust(blue, $lightness: 20%);
 $disabledInputColor: #a5a4a4;
 $normalMessageColor: #a5a4a4;
 $warningMessageColor: red;
-$underscoreColor: rgba(75 75 247 50%);
+$underscoreColor: rgba(75, 75, 247, 50%);
 $hrColor: #eaeaea;
 $fontFamily: 'Inter', sans-serif;
 $inputFontSize: .8em;

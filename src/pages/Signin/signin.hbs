@@ -1,0 +1,19 @@
+{{#NotSignedLayout }}
+{{#Card title="Вход"}}
+
+<form name="form__signin">
+  {{{Input type="email" type="email" name="email" placeholder="Email"}}}
+  {{{Input type="email" type="password" name="password" placeholder="Пароль"}}}
+
+  {{{Spacer}}}
+  
+  {{{Message class="card__message_error" text="Неверный логин или пароль"}}}
+  
+  {{!-- {{> shorts/message class="card__message_error" text="Неверный логин или пароль" }} --}}
+  {{!-- {{> button/button text="Войти" url="#" }} --}}
+</form>
+
+{{{Link class="card__link" text="Не зарегистрированы?" url="/" }}}
+{{/Card}}
+
+{{/NotSignedLayout }}

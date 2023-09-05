@@ -1,0 +1,14 @@
+.index__contents {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr {
+  width: 100%;
+}

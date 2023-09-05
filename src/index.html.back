@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Оглавление</title>
+  <style>
+    .index__contents {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: left;
+      font-family: sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    hr {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="index__nav">
+    <ul class="index__contents">
+      <li><a href="/pages/notLogged/signin.html">Войти</a></li>
+      <li><a href="/pages/notLogged/signup.html">Зарегистрироваться</a></li>
+      <hr>
+  
+  
+      <li><a href="/pages/profile/overview.html">Просмотр профиля</a></li>
+      <li><a href="/pages/profile/edit.html">Редактировать профиль</a></li>
+      <li><a href="/pages/profile/editPassword.html">Редактировать пароль</a></li>
+      <hr>
+      
+      <li><a href="/pages/files/uploadAvatar.html">Загрузить аватар</a></li>
+      <li><a href="/pages/files/uploadAvatarError.html">Ошибка загрузки аватара</a></li>
+      <li><a href="/pages/files/uploadedAvatar.html">Аватар загружен</a></li>
+      <hr>
+  
+      <li><a href="/pages/users/addUser.html">Добавить пользователя</a></li>
+      <li><a href="/pages/users/removeUser.html">Удалить пользователя</a></li>
+      <hr>
+      
+      <li><a href="/pages/errors/forbidden.html">404</a></li>
+      <li><a href="/pages/errors/error.html">500</a></li>
+      <hr>
+  
+      <li><a href="/pages/chat/messenger.html">Страница чатов (заглушка)</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html> 

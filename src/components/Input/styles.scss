@@ -1,0 +1,12 @@
+@import '#/styles.scss';
+
+.input {
+  width: fit-content;
+  border: none;
+  outline: none;
+  font-family: $fontFamily;
+}
+
+.input[type="password"] {
+  color: red;
+}
